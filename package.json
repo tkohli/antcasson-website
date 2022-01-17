@@ -1,0 +1,19 @@
+{
+  "name": "antcasson-website",
+  "version": "1.0.0",
+  "description": "ant-casson-website-portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "antcasson-website"
+  },
+  "keywords": [
+    "portofolio",
+    "front-end-dev"
+  ],
+  "author": "Anthony Casson",
+  "license": "ISC"
+}
