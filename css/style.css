@@ -325,7 +325,7 @@ nav {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: var(--clr-lilac);
     width: 1.5em;
     height: 3px;
     border-radius: 1em;
