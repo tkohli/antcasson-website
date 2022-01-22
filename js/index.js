@@ -1,18 +1,6 @@
-// const navToggle = document.querySelector('.nav-toggle');
-// const navLinks = document.querySelectorAll('.nav__link')
-
-// navToggle.addEventListener('click', () => {
-//     document.body.classList.toggle('nav-open');
-// });
-
-// navLinks.forEach(link => {
-//     link.addEventListener('click', () => {
-//         document.body.classList.remove('nav-open');
-//     })
-// })
-
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('#nav')
+// const logo = document.querySelector("#logo")
 
 navToggle.addEventListener("click", () => {
     
@@ -28,14 +16,9 @@ navToggle.addEventListener("click", () => {
     }
 })
 
-
-
-
-// console.log(nav.getAttribute("data-visible"))
-
-// navToggle.addEventListener("click", () => {
-
-//     const open = nav.getAttribute = "data-visible"
-//     console.log(open)
-//     nav.style.transform = "translateX(100%)"
+// logo.addEventListener("click", () => {
+//     logo.style.position = "absolute"
+//     logo.style.transform = "translateX(10%)"
 // })
+
+

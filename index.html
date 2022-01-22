@@ -1,160 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Anthony Casson</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
-                
-        <link rel="stylesheet" href="css/style.css">
 
-    </head>
-    <body>
-        <a class="skip-to-content" href="#work">Skip to content</a>
-        <header>
-            <div class="logo">
-                <img src="img/logo.png" alt="small image of an ant">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <!-- <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                 -->
-                    <ul id="nav" data-visible="false" class="nav__list">
-                        <li class="active nav__item"><a class="nav__link" href="#home">Home</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#services">My Services</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#about">About me</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#work">My Work</a></li>
-                    </ul>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Anthony Casson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-                <!-- </ul> -->
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <main id="main">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Oswald:wght@500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <a class="skip-to-content" href="#work">Skip to content</a>
+    <header>
+        <div class="logo">
+            <img id="logo" src="img/logo.png" alt="small image of an ant" />
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul id="nav" data-visible="false" class="nav__list">
+                <li class="active nav__item">
+                    <a class="nav__link" href="#home">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#services">My Services</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#about">About me</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#work">My Work</a>
+                </li>
+            </ul><!-- </ul> -->
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <main id="main">
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Anthony Casson</strong>
+                Anthony<strong>Casson</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img src="img/face-vector-XL.png" alt="vector of my face pink and mint green" class="intro__img">
+            <img src="img/face-vector-XL.png" alt="vector of my face pink and mint green" class="intro__img" />
         </section>
-        
-        
+
         <!-- My services -->
         <section class="my-services" id="services">
             <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
                 <div class="service">
-                    <h3>HTML + CSS + JS</h3>
-                    <p>I really love playing with the basic stuff and see how far I can get pushing thing without frameworks or 3rd party library's
+                    <h3>
+                        HTML <span class="text--accent">-</span> CSS
+                        <span class="text--accent">-</span> JS
+                        <span class="text--accent">-</span> REACT
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+                        porro, quod obcaecati sint officia dolorem numquam dolores, est
+                        dolor culpa asperiores laboriosam quo qui!
                     </p>
-                </div> <!-- / service -->
-                
+                </div>
+                <!-- / service -->
+
                 <div class="service">
                     <h3>E-Commerce</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-                
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <!-- / service -->
+
                 <div class="service">
-                    <h3>WordPress</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
-            
+                    <h3>Nu bezig met</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <!-- / service -->
+            </div>
+            <!-- / services -->
+
             <a href="#work" class="btn btn--work">My Work</a>
         </section>
-        
-        
+
         <!-- About me -->
         <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Front-end dev from The Hague</p>
-           
-           <div class="about-me__body">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
-           
-           <img src="img/antcasson-crop.jpg" alt="pink and mint face vector" class="about-me__img">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">
+                Front-end dev from The Hague
+            </p>
+
+            <div class="about-me__body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <img src="img/antcasson-crop.jpg" alt="pink and mint face vector" class="about-me__img" />
         </section>
-        
+
         <!-- My Work -->
         <section class="my-work" id="work">
             <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-            
+            <p class="section__subtitle section__subtitle--work">
+                A selection of my range of work
+            </p>
+
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <img src="img/portfolio-01.png" alt="" class="portfolio__img zoom" />
+                    <div class="content fade">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        maiores aspernatur explicabo maxime doloremque rem porro ad in
+                        eveniet error!
+                    </div>
+                    <div class="portfolio__button-wrapper">
+                        <a class="portfolio__link right" href="https://github.com/AntCasson">view code
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a class="portfolio__link left" href="https://github.com/AntCasson">view app
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Portfolio item 02 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <img src="img/portfolio-02.png" alt="" class="portfolio__img" />
+                    <div class="content fade">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        maiores aspernatur explicabo maxime doloremque rem porro ad in
+                        eveniet error!
+                    </div>
+                </div>
+
                 <!-- Portfolio item 03 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <img src="img/portfolio-03.png" alt="" class="portfolio__img" />
+                    <div class="content fade">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        maiores aspernatur explicabo maxime doloremque rem porro ad in
+                        eveniet error!
+                    </div>
+                </div>
+
                 <!-- Portfolio item 04 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
+                    <div class="content fade">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        maiores aspernatur explicabo maxime doloremque rem porro ad in
+                        eveniet error!
+                    </div>
+                </div>
+
                 <!-- Portfolio item 05 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img" />
+                    <div class="content fade">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        maiores aspernatur explicabo maxime doloremque rem porro ad in
+                        eveniet error!
+                    </div>
+                </div>
+
                 <!-- Portfolio item 06 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <img src="img/portfolio-06.pnga" alt="" class="portfolio__img" />
+                    <div class="content fade">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        maiores aspernatur explicabo maxime doloremque rem porro ad in
+                        eveniet error!
+                    </div>
+                </div>
+
                 <!-- Portfolio item 07 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img" />
+                    <div class="content fade">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        maiores aspernatur explicabo maxime doloremque rem porro ad in
+                        eveniet error!
+                    </div>
+                </div>
+
                 <!-- Portfolio item 08 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img" />
+                    <div class="content fade">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        maiores aspernatur explicabo maxime doloremque rem porro ad in
+                        eveniet error!
+                    </div>
+                </div>
+
                 <!-- Portfolio item 09 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img" />
+                    <div class="content fade">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        maiores aspernatur explicabo maxime doloremque rem porro ad in
+                        eveniet error!
+                    </div>
+                </div>
+
                 <!-- Portfolio item 0 0-->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
-                </a>
-            </div>
+                <div class="portfolio__item">
+                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img" />
+                    <div class="content fade">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                        maiores aspernatur explicabo maxime doloremque rem porro ad in
+                        eveniet error!
+                    </div>
+                </div>
         </section>
-        </main>
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <!-- replace with your own email address -->
-            <a href="mailto:anthonyrcasson@gmail.com" class="footer__link">Say Hi!</a>
-            <ul class="social-list">
-                <!-- <li class="social-list__item">
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:anthonyrcasson@gmail.com" class="footer__link">Say Hi!</a>
+        <ul class="social-list">
+            <!-- <li class="social-list__item">
                     <a class="social-list__link" href="https://codepen.io">
                         <i class="fab fa-codepen"></i>
                     </a>
@@ -169,17 +262,16 @@
                         <i class="fab fa-twitter"></i>
                     </a>
                 </li> -->
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-            <small>Made by AntCasson</small>
-        </footer>
-        
-        
-        <script src="js/index.js"></script>
-        
-    </body>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+        <small>Made by AntCasson 🐜</small>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
 </html>
