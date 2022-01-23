@@ -16,9 +16,9 @@ navToggle.addEventListener("click", () => {
     }
 })
 
-// logo.addEventListener("click", () => {
-//     logo.style.position = "absolute"
-//     logo.style.transform = "translateX(10%)"
-// })
+logo.addEventListener("click", () => {
+    logo.style.position = "absolute"
+    logo.style.transform = "translateX(10%)"
+})
 
 
