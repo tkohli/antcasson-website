@@ -72,6 +72,10 @@ body {
   line-height: 1.6;
 }
 
+main.fullscreen {
+  height: 100vh;
+}
+
 section {
   padding: 5em 2em;
   margin-inline: auto;
@@ -883,6 +887,7 @@ a.footer__link:hover {
 
 a.homepage-link-btn{  
   grid-column: span 2;
+  display: block;
   margin-top: 3.5rem;
   margin-inline: auto;
   padding: 1em 1.3em;
