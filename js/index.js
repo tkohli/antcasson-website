@@ -1,6 +1,6 @@
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('#nav')
-// const logo = document.querySelector("#logo")
+const logo = document.querySelector("#logo")
 
 navToggle.addEventListener("click", () => {
     
@@ -17,8 +17,7 @@ navToggle.addEventListener("click", () => {
 })
 
 logo.addEventListener("click", () => {
-    logo.style.position = "absolute"
-    logo.style.transform = "translateX(10%)"
+    logo.style.animation = "walk 1s linear"
 })
 
 

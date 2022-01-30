@@ -2,27 +2,29 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Anthony Casson</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <meta name="description"
+        content="Portfolio van Anthony Casson, zelfgeleerde web developer met een passie voor CSS.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Oswald:wght@500&display=swap"
         rel="stylesheet" />
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <a class="skip-to-content" href="#work">Skip to content</a>
+    <a class="skip-to-content" href="#work">Ga naar projecten</a>
     <header>
         <div class="logo">
-            <img id="logo" src="img/logo.png" alt="small image of an ant" />
+            <img id="logo" src="img/logo.png" alt="sicoontje van een mier" />
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -33,13 +35,13 @@
                     <a class="nav__link" href="#home">Home</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#services">My Services</a>
+                    <a class="nav__link" href="#services">Wat</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#about">About me</a>
+                    <a class="nav__link" href="#about">Wie</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#work">My Work</a>
+                    <a class="nav__link" href="#work">Projecten</a>
                 </li>
             </ul><!-- </ul> -->
         </nav>
@@ -51,85 +53,88 @@
             <h1 class="section__title section__title--intro">
                 Anthony<strong>Casson</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img src="img/face-vector-XL.png" alt="vector of my face pink and mint green" class="intro__img" />
+            <p class="section__subtitle section__subtitle--intro">frontend dev</p>
+            <img src="img/face-vector-XL.png" alt="Illustratie van Anthony's gezicht" class="intro__img" />
         </section>
 
         <!-- My services -->
         <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
+            <h2 class="section__title section__title--services">"Wat doe ik nou weer?"</h2>
             <div class="services">
-                <div class="service">
-                    <h3>
-                        HTML <span class="text--accent">-</span> CSS
-                        <span class="text--accent">-</span> JS
-                        <span class="text--accent">-</span> REACT
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-                        porro, quod obcaecati sint officia dolorem numquam dolores, est
-                        dolor culpa asperiores laboriosam quo qui!
-                    </p>
-                </div>
-                <!-- / service -->
 
                 <div class="service">
-                    <h3>E-Commerce</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.
-                    </p>
+                    <h3>Vaardigheden</h3>
+                    <ul class="skills">
+                        <li class="skill">HTML</li>
+                        <li class="skill">CSS</li>
+                        <li class="skill">Javascript</li>
+                        <li class="skill">React</li>
+                        <li class="skill">Git</li>
+                        <li class="skill">GitHub</li>
+                        <li class="skill">Tailwind</li>
+                        <li class="skill">PostCSS</li>
+                        <li class="skill">Sass</li>
+                        <li class="skill">Figma</li>
+                        <li class="skill">Adobe Suite</li>
+                        <li class="skill">Wordpress</li>
+                        <li class="skill">Umbraco CMS</li>
+                        <li class="skill">A11y</li>
+                        <li class="skill">Google Lighthouse</li>
+                    </ul>
                 </div>
                 <!-- / service -->
 
                 <div class="service">
                     <h3>Nu bezig met</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.
+                        Op dit moment ben ik bezig met <strong>SUPABASE, NextJs, Storybook, Parcel</strong>en
+                        <strong>Gatsby</strong>.
+                        Zo wil ik de contact formulier koppelen aan een database in <strong>SUPABASE</strong>.
+                        Met <strong>NextJs</strong> een
+                        PWA maken van mijn <a class="service__link--app"
+                            href="https://pizzabuddy.netlify.app/">PizzaPlotter app</a>. En deze
+                        website overzetten in React/Gatsby.
                     </p>
                 </div>
                 <!-- / service -->
             </div>
             <!-- / services -->
 
-            <a href="#work" class="btn btn--work">My Work</a>
+            <a href="#work" class="btn btn--work">Projecten</a>
         </section>
 
         <!-- About me -->
         <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who I am</h2>
+            <h2 class="section__title section__title--about">Wie ben ik</h2>
             <p class="section__subtitle section__subtitle--about">
-                Front-end dev from The Hague
+                Anthony Casson uit Den Haag
             </p>
 
             <div class="about-me__body">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    Op dit moment werk ik als <strong>Guest Experience Teamleader</strong> bij SEA LIFE Scheveningen. Na
+                    het automatiseren van de gegevens van bezoekersenquête geïnteresseerd geraakt in
+                    programmeren. In 2019 begonnen met content management voor SEA LIFE Scheveningen website en geholpen
+                    met opzetten met site van Legoland Discovery Centre.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    Na het afronden van het <strong>Scrimba Frontend Career Path</strong> eind 2021 ben ik sinds kort
+                    op zoek naar een nieuwe uitdaging, frontend development.
+                </p>
+                <p>
+                    Zelfgeleerde web developer die met extra interesse in React en CSS. Ik schrijf
+                    graag CSS <strong>mobile-first</strong> en voor mijn plezier probeer ik met moderne CSS met behulp
+                    op Codepen of met <strong>Sass</strong> en <strong>PostCSS</strong> plugins.
                 </p>
             </div>
 
-            <img src="img/antcasson-crop.jpg" alt="side profile photo of me" class="about-me__img" />
+            <img src="img/antcasson-crop.jpg" alt="foto van anthony, zijprofiel" class="about-me__img" />
         </section>
 
         <!-- My Work -->
         <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
+            <h2 class="section__title section__title--work">Projecten</h2>
             <p class="section__subtitle section__subtitle--work">
-                A selection of my range of work
             </p>
 
             <div class="portfolio">
@@ -137,16 +142,16 @@
                 <div class="portfolio__item">
                     <img src="img/portfolio-01.png" alt="Pizza plotter UI screenshots" class="portfolio__img zoom" />
                     <div class="content fade">
-                        Web app in HTML/CSS/JS. Maakt pizza's bakken makkelijker. Update het recept en de korte uitleg
-                        bij aanpassingen.
-                        Met italiaanse zuurdesem optie voor de echte pizzaiolo's!
+                        Web app in HTML/CSS/JS. Pizza recepten helper, update het recept en geeft korte uitleg.
+                        Met italiaanse zuurdesem (poolish) optie voor de echte pizzaiolo's!
                     </div>
                     <div class="portfolio__button-wrapper">
-                        <a class="portfolio__link right" href="https://github.com/AntCasson/pizza-plotter">view code
-                            <i class="fab fa-github"></i>
+                        <a class="portfolio__link right" href="https://github.com/AntCasson/pizza-plotter"><i
+                                class="fab fa-github"></i>code
+
                         </a>
-                        <a class="portfolio__link left" href="https://github.com/AntCasson">view app
-                            <i class="fas fa-external-link-alt"></i>
+                        <a class="portfolio__link left" href="https://github.com/AntCasson"><i
+                                class="fas fa-external-link-alt"></i>app
                         </a>
                     </div>
                 </div>
@@ -156,12 +161,12 @@
                     <img src="img/portfolio-02.png" alt="dashboard google chrome extensie"
                         class="portfolio__img zoom" />
                     <div class="content fade">
-                        Google Chrome browser extensie gemaakt als voor API module Scrimba.
+                        Google Chrome browser extensie gemaakt voor API module Scrimba. Bij het openen van nieuw
+                        tabblad verschijnt dashboard met tijd, huidige weer en dogecoin informatie.
                     </div>
                     <div class="portfolio__button-wrapper">
-                        <a class="portfolio__link right" href="https://github.com/AntCasson/antcasson-dashboard">view
-                            code
-                            <i class="fab fa-github"></i>
+                        <a class="portfolio__link right" href="https://github.com/AntCasson/antcasson-dashboard"><i
+                                class="fab fa-github"></i>code
                         </a>
 
                     </div>
@@ -169,73 +174,63 @@
 
                 <!-- Portfolio item 03 -->
                 <div class="portfolio__item">
-                    <img src="img/portfolio-03.png" alt="" class="portfolio__img zoom" />
+                    <img src="img/portfolio-03.png" alt="Ontwerp van SEA LIFE app" class="portfolio__img zoom" />
                     <div class="content fade">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-                        maiores aspernatur explicabo maxime doloremque rem porro ad in
-                        eveniet error!
+                        Figma ontwerp SEA LIFE app. Met audio tour, extra informatie en 360 afbeelding. Framework
+                        A-frame gebruikt voor
+                        interactieve weergave van afbeeldingen op mobiele apparaten.
                     </div>
                     <div class="portfolio__button-wrapper">
-                        <a class="portfolio__link right" href="https://github.com/AntCasson">view code
-                            <i class="fab fa-github"></i>
+                        <a class="portfolio__link right"
+                            href="https://www.figma.com/file/1foKWkwMw6XAeKBRYtqads/SEA-LIFE-App?node-id=0%3A1"><i
+                                class="fab fa-figma"></i>Ontwerp
                         </a>
-                        <a class="portfolio__link left" href="https://github.com/AntCasson">view app
-                            <i class="fas fa-external-link-alt"></i>
+                        <a class="portfolio__link left"
+                            href=https://www.figma.com/proto/1foKWkwMw6XAeKBRYtqads/SEA-LIFE-App?node-id=1%3A734&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A734">
+                            <i class="fab fa-figma"></i>Prototype
                         </a>
                     </div>
                 </div>
 
                 <!-- Portfolio item 04 -->
                 <div class="portfolio__item">
-                    <img src="img/portfolio-04.png" alt="" class="portfolio__img zoom" />
+                    <img src="img/portfolio-04.png" alt="Screenshot speed typ spel, hypertyper"
+                        class="portfolio__img zoom" />
                     <div class="content fade">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-                        maiores aspernatur explicabo maxime doloremque rem porro ad in
-                        eveniet error!
+                        Speed-typ-game gemaakt met React. Custom hook gebruikt om de app overzichtelijk te houden.
                     </div>
                     <div class="portfolio__button-wrapper">
-                        <a class="portfolio__link right" href="https://github.com/AntCasson">view code
-                            <i class="fab fa-github"></i>
+                        <a class="portfolio__link right" href="https://github.com/AntCasson"><i
+                                class="fab fa-github"></i>code
                         </a>
-                        <a class="portfolio__link left" href="https://github.com/AntCasson">view app
-                            <i class="fas fa-external-link-alt"></i>
+                        <a class="portfolio__link left" href="https://hypertyper.netlify.app/"><i
+                                class="fas fa-external-link-alt"></i>app
                         </a>
                     </div>
                 </div>
 
                 <!-- Portfolio item 05 -->
                 <div class="portfolio__item">
-                    <img src="img/portfolio-01.png" alt="" class="portfolio__img zoom" />
+                    <img src="img/portfolio-05.png" alt="screenshot van snake spel" class="portfolio__img zoom" />
                     <div class="content fade">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-                        maiores aspernatur explicabo maxime doloremque rem porro ad in
-                        eveniet error!
+                        Retro Snake in HTML/CSS/JS. Mijn eerste Javascript game.
                     </div>
                     <div class="portfolio__button-wrapper">
-                        <a class="portfolio__link right" href="https://github.com/AntCasson">view code
-                            <i class="fab fa-github"></i>
+                        <a class="portfolio__link right" href="https://github.com/AntCasson/snake"><i
+                                class="fab fa-github"></i>code
                         </a>
-                        <a class="portfolio__link left" href="https://github.com/AntCasson">view app
-                            <i class="fas fa-external-link-alt"></i>
+                        <a class="portfolio__link left" href="https://antcasson.github.io/snake/"><i
+                                class="fas fa-external-link-alt"></i>app
                         </a>
                     </div>
                 </div>
 
                 <!-- Portfolio item 06 -->
                 <div class="portfolio__item">
-                    <img src="img/portfolio-01.png" alt="" class="portfolio__img zoom" />
+                    <img src="img/face-vector-XL.png" alt="weer een illustratie van anthony's gezicht."
+                        class="portfolio__img zoom" />
                     <div class="content fade">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-                        maiores aspernatur explicabo maxime doloremque rem porro ad in
-                        eveniet error!
-                    </div>
-                    <div class="portfolio__button-wrapper">
-                        <a class="portfolio__link right" href="https://github.com/AntCasson">view code
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a class="portfolio__link left" href="https://github.com/AntCasson">view app
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+                        Met behulp van Google Lighthouse 100% scores op alle punten mijn persoonlijk website.
                     </div>
                 </div>
 
@@ -244,30 +239,36 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:anthonyrcasson@gmail.com" class="footer__link">Say Hi!</a>
+
+        <div class="contact">
+            <h2 class="contact-form__title">Contact</h2>
+            <p class="section__subtitle contact-form__subtitle">Stuur een mailtje!</p>
+
+            <form id="form" class="contact-form" target="_blank"
+                action="https://formsubmit.co/27454e1d260d56db7d607fe5bc0ee2f5" method="POST">
+                <input type="text" name="name" class="contact_name" placeholder="Naam" required>
+                <input type="email" name="email" class="contact__email" placeholder="Email" required>
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value=""> <textarea placeholder="Bericht" class="contact__message"
+                    name="message" rows="10" required></textarea>
+                <button id="form-submit" type="submit" class="contact-form__btn">verzenden</button>
+            </form>
+        </div>
+
+
         <ul class="social-list">
-            <!-- <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="http://dribbble.com">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li> -->
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com">
+                <a class="social-list__link" href="mailto:anthonyrcasson@gmail.com">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" aria-label="github link naar mijn pagina" href="https://github.com">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
         </ul>
-        <small>Made by AntCasson 🐜</small>
+        <small class="text--accent">Made by AntCasson</small>
     </footer>
 
     <script src="js/index.js"></script>
