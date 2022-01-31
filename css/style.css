@@ -60,6 +60,7 @@ html {
 
 body {
   color: var(--clr-dark);
+  min-height: 100vh;
   background: linear-gradient(
     0deg,
     rgba(141, 118, 176, 1) 0%,
@@ -70,10 +71,6 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
-}
-
-main.fullscreen {
-  height: 100vh;
 }
 
 section {
@@ -193,10 +190,9 @@ a.skip-to-content:focus {
 /* NEW CODE  */
 
 .logo {
-  max-width: 3rem;
-  padding: 0.5em;
-  margin-left: 0.5em;
-  margin-right: auto;
+  position: absolute;
+  width: 2rem;
+  inset: 1rem auto auto 1.5rem;
   transition: transform 3s ease-in-out;
 }
 
@@ -216,7 +212,8 @@ a.skip-to-content:focus {
 
 header {
   position: relative;
-  height: 2.5rem;
+  height: 3.25rem;
+  padding-block: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -268,7 +265,7 @@ nav {
   align-self: center;
   z-index: 9999;
   background-color: transparent;
-  padding: 2em 1.2em;
+  padding: 1.65rem;
   background: transparent;
   border: none;
   outline: none;
@@ -325,7 +322,7 @@ nav {
 
 @media (min-width: 37.5rem) {
   header {
-    justify-content: space-around;
+    justify-content: center;
     padding: 0.1em;
     width: 100%;
     padding-inline: clamp(2rem, 8vw, 10rem);
@@ -383,18 +380,21 @@ nav {
 }
 
 .section__subtitle--intro {
-  display: inline-block;
+  display: block;
+  padding-block-end: 0.5em;
+  text-align: center;
   background: linear-gradient(
     -45deg,
     var(--clr-purple),
-    var(--clr-pink),
-    var(--clr-accent),
+    var(--clr-pink) ,
+    var(--clr-accent) 5%,
     var(--clr-pink),
     var(--clr-purple)
   );
   background-color: var(--clr-lilac);
   background-size: 200% 400%;
-  animation: gradient 10s ease infinite;
+  border-radius: 0.2em;
+  animation: gradient 8s ease infinite;
 }
 
 @keyframes gradient {
@@ -435,7 +435,6 @@ nav {
     grid-row: 2;
     text-align: right;
     left: -1.5em;
-    border-radius: 0.2em;
     width: calc(100% + 1.5em);
   }
 
@@ -490,8 +489,8 @@ nav {
 }
 
 .section__title--services {
-  margin-bottom: 3rem;
-  /* text-align: left; */
+  margin-bottom: 3.5rem;
+  text-align: left;
   font-size: var(--fs-h2);
   color: var(--clr-light);
   position: relative;
@@ -499,6 +498,7 @@ nav {
 
 .section__title--services::after {
   content: "";
+  position: absolute;
   display: block;
   width: 7ch;
   height: 3px;
@@ -511,7 +511,7 @@ nav {
 }
 
 .service h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--clr-lilac);
 }
 
@@ -533,12 +533,14 @@ nav {
 .service .skill {
   background-repeat: no-repeat;
   padding-inline: 0.85em;
+  padding-block: 0.275em;
   background-color: var(--clr-accent);
   margin: 0.325em 0.125em;
   border-radius: 0.5rem;
   color: var(--clr-dark);
-  border: 0.125rem solid var(--clr-light);
+  /* border: 0.125rem solid var(--clr-light); */
 }
+
 
 .service {
   flex: 1;
@@ -576,7 +578,7 @@ nav {
 
 @media (min-width: 51.25rem) {
   .my-services {
-    border-radius: 0.5rem 4rem 0.5rem 20%;
+    border-radius: 0.5rem 0.5rem 0.5rem 20%;
     box-shadow: var(--bs-big);
   }
 
@@ -586,7 +588,8 @@ nav {
   }
 
   .section__title--services::after {
-    margin: 0.2em auto 0.8em;
+    inset: 3.1rem 13rem 5rem;
+    width: 60%;
   }
 
   .services {
@@ -596,7 +599,7 @@ nav {
   }
 
   .service + .service {
-    margin-left: 2em;
+    margin-left: 2.25em;
   }
 }
 
@@ -615,6 +618,8 @@ nav {
 
 .section__subtitle--about {
   color: var(--clr-light);
+  background-color: var(--clr-dark);
+  padding-bottom: .5em;
 }
 
 @media (min-width: 35em) {
@@ -716,10 +721,12 @@ nav {
 
 .portfolio__link {
   margin-bottom: 2em;
-  padding: 0.4em 1em;
-  background-color: var(--clr-accent);
+  padding-inline: 1.3em;
+  padding-top: .5em;
+  padding-bottom: .4em;
+  background-color: var(--clr-dark);
   border-radius: 100vh;
-  color: var(--clr-dark);
+  color: var(--clr-light);
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
@@ -888,16 +895,16 @@ a.footer__link:hover {
 a.homepage-link-btn{  
   grid-column: span 2;
   display: block;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   margin-inline: auto;
-  padding: 1em 1.3em;
-  width: 60%;
+  padding: .75em 1em;
+  width: 50%;
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
   text-decoration: none;
   font-weight: var(--fw-bold);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: .3rem;
   transition: box-shadow .3s;
 }
@@ -910,6 +917,7 @@ a.homepage-link-btn:focus {
 }
 
 footer small {
+  margin-top: 2em;
   color: var(--clr-dark);
 }
 
@@ -929,9 +937,10 @@ footer small {
   font-size: 2em;
   color: var(--clr-dark);
 }
-.social-list__link:hover,
-i:hover {
-  color: var(--clr-light);
+
+.social-list__link img:hover{
+  transform: scale(1.1);
+  filter: invert();
 }
 
 /* Individual portfolio item styles */

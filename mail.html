@@ -4,11 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bedankt voor de mail!</title>
-    <meta name="description"
-        content="Portfolio van Anthony Casson, zelfgeleerde web developer met een passie voor CSS.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <title>Portfolio Anthony Casson</title>
+    <meta name="description" content="Bedankt voor de mail. Ik zal z.s.m. reageren op je bericht.">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Oswald:wght@500&display=swap"
@@ -18,7 +15,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/style.css" />
-    <script async src="js/index.js"></script>
+    <script defer src="js/index.js"></script>
 </head>
 
 <body>
@@ -49,11 +46,11 @@
     </header>
 
 
-    <main class="fullscreen">
+    <main>
         <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
+            <h2 class="section__title section__title--intro">
                 Bedankt voor de <strong>mail!</strong>
-            </h1>
+            </h2>
             <p class="section__subtitle section__subtitle--intro">Ik reageer binnen 48 uur.</p>
             <img src="img/face-vector-XL.png" alt="Illustratie van Anthony's gezicht" class="intro__img" />
             <a class="homepage-link-btn" href="https://www.antcasson.eu/">TERUG</a>
@@ -66,18 +63,21 @@
 
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="mailto:anthonyrcasson@gmail.com">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a class="social-list__link mail" aria-label="Stuur me een email"
+                    href="mailto:anthonyrcasson@gmail.com">
+                    <img src="/img/mail.svg" alt="Email icoontje">
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" aria-label="github link naar mijn pagina" href="https://github.com">
-                    <i class="fab fa-github"></i>
+                <a class="social-list__link github" aria-label="Github link naar mijn pagina"
+                    href="https://github.com/antcasson">
+                    <img src="/img/github.svg" alt="Github logo">
                 </a>
             </li>
         </ul>
-        <small class="text--accent">Made by AntCasson</small>
+        <small>Made by AntCasson</small>
     </footer>
+
 
 </body>
 
