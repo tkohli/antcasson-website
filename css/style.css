@@ -705,7 +705,7 @@ nav {
   padding: 1em;
   font-size: 1.125rem;
   line-height: 1.2;
-  background-color: #1f02339d;
+  background-color: #1f0233bd;
   text-align: left;
 }
 
@@ -760,13 +760,9 @@ i:hover {
   filter: blur(0.5rem);
 }
 
-.portfolio__item:hover > img.gray {
-  filter: grayscale(1);
-}
-
 .portfolio__item:hover > img.zoom {
-  transform: scale(1.08);
-  filter: blur(0.25rem);
+  transform: scale(1.04);
+  filter: blur(0.5rem);
 }
 
 .portfolio__item > .content.fade {
