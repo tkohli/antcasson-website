@@ -283,7 +283,7 @@ nav {
 
 [aria-expanded="true"] .hamburger::before {
   background: var(--clr-light);
-  transform: rotate(90deg) translateX(-6px);
+  transform: rotate(90deg) translateX(-7px);
 }
 
 [aria-expanded="true"] .hamburger::after {
